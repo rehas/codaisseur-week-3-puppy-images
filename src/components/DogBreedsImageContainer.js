@@ -27,7 +27,7 @@ export default class DogsListContainer extends PureComponent {
     }
 
     render(){
-        return <DogBreedImages images = {this.state.images}/>
+        return <DogBreedImages images = {this.state.images} breedName = {this.props.match.params.breed}/>
     }
 }  
 

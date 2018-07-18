@@ -8,7 +8,7 @@ export default function DogBreedImages (props) {
 
       This page will show images of a specific dog breed.
 
-      <h2> Which is {props.match}</h2>
+      <h2> Which is {props.breedName}</h2>
 
       {props.images && props.images.map((x)=> <img key={props.breed}  src = {x}/> )}
       {!props.images && "loading..."}
