@@ -3,6 +3,7 @@ import {Route} from 'react-router-dom'
 import logo from './logo.svg';
 import './App.css';
 import DogBreedImages from './components/DogBreedImages'
+import DogBreedImagesContainer from './components/DogBreedsImageContainer'
 import DogsListContainer from './components/DogsListContainer';
 
 class App extends Component {
@@ -18,7 +19,7 @@ class App extends Component {
         </p>
         <main>
           <Route exact path='/' component={DogsListContainer}/>
-          <Route exact path='/dog-breeds/:breed' component={DogBreedImages}/>
+          <Route exact path='/dog-breeds/:breed' component={DogBreedImagesContainer}/>
         </main>
       </div>
     );
