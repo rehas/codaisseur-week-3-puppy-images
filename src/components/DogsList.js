@@ -1,5 +1,6 @@
 import React, {PureComponent} from 'react'
 import PropTypes from 'prop-types'
+import {Link} from 'react-router-dom'
 
 class DogsList extends PureComponent {
     static proptypes = {
@@ -7,8 +8,12 @@ class DogsList extends PureComponent {
     }
 
     renderDogBreed(breed){
-        return <li key={breed}>{breed}</li>
-    }
+        return (
+            <li key={breed}>
+                <Link to={ `/dog-breeds/${breed}`}>    {breed}</Link>
+            </li>
+            )
+        }
     
 
     render(){
